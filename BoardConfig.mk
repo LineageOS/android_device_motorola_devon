@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2022-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -28,6 +28,9 @@ ODM_MANIFEST_NC_FILES := $(DEVICE_PATH)/sku/manifest_nc.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/ext_config/hawao-default.config
+
+# Recovery
+TARGET_RECOVERY_UI_MARGIN_HEIGHT := 100
 
 # Inherit from the proprietary version
 include vendor/motorola/hawao/BoardConfigVendor.mk
