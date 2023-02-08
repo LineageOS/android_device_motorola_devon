@@ -6,3 +6,7 @@
 
 # Inherit from sm6225-common
 $(call inherit-product, device/motorola/sm6225-common/bengal.mk)
+
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
