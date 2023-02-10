@@ -11,3 +11,6 @@ TARGET_SCREEN_DENSITY := 420
 
 # Inherit from sm6225-common
 include device/motorola/sm6225-common/BoardConfigCommon.mk
+
+# Inherit from the proprietary version
+include vendor/motorola/hawao/BoardConfigVendor.mk
