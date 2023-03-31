@@ -9,6 +9,9 @@ include device/motorola/sm6225-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/motorola/hawao
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := hawao
+
 # Display
 TARGET_SCREEN_DENSITY := 420
 
