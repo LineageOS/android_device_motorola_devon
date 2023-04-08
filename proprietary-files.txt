@@ -200,6 +200,11 @@ vendor/firmware/a650_gmu.bin
 vendor/firmware/a650_sqe.fw
 vendor/firmware/a702_sqe.fw
 
+# NFC
+vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nxp.conf
+vendor/etc/libnfc-sec-vendor.conf
+
 # Touchscreen firmware
 vendor/firmware/focaltech-edosd-ft3519-72-0000-hawao.bin
 vendor/firmware/focaltech-edovtdr-ft3519-63-0000-hawao.bin
