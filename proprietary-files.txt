@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from hawao_g S2SES32.28-70-3
+# All unpinned blobs below are extracted from devon_g S2SN32.34-72-12
 
 # ACDB
 vendor/etc/acdbdata/Bluetooth_cal.acdb
@@ -23,26 +23,26 @@ vendor/firmware/aw_skt.bin
 
 # Camera
 vendor/lib/libcamxexternalformatutils.so
+vendor/lib64/camera/com.mot.eeprom.mot_devon_ov02b10_otp.so
 vendor/lib64/camera/com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom.so
 vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_hi1634q_eeprom.so
-vendor/lib64/camera/com.mot.eeprom.mot_hawao_gc02m1_otp.so
 vendor/lib64/camera/com.mot.eeprom.mot_s5k4h7_otp.so
-vendor/lib64/camera/com.qti.flash.aw36514.so
-vendor/lib64/camera/com.qti.flash.ocp81373.so
-vendor/lib64/camera/com.qti.sensor.mot_gc02m1.so
 vendor/lib64/camera/com.qti.sensor.mot_hi1634q.so
+vendor/lib64/camera/com.qti.sensor.mot_ov02b10.so
+vendor/lib64/camera/com.qti.sensor.mot_ov02d10.so
 vendor/lib64/camera/com.qti.sensor.mot_s5k4h7.so
 vendor/lib64/camera/com.qti.sensor.mot_s5kjn1.so
-vendor/lib64/camera/com.qti.sensormodule.mot_hawao_gc02m1_sunwin.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_hawao_hi1634q_ofilm.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_hawao_s5k4h7_ofilm.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_hawao_s5kjn1_qtech.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_devon_hi1634q_ofilm.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_devon_ov02b10_ofilm.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_devon_ov02d10_sunwin.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_devon_s5k4h7_ofilm.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_devon_s5kjn1_qtech.bin
 vendor/lib64/camera/com.qti.tuned.default.bin
-vendor/lib64/camera/com.qti.tuned.mot_hawao_gc02m1.bin
-vendor/lib64/camera/com.qti.tuned.mot_hawao_hi1634q.bin
-vendor/lib64/camera/com.qti.tuned.mot_hawao_hi1634q_pnl.bin
-vendor/lib64/camera/com.qti.tuned.mot_hawao_s5k4h7.bin
-vendor/lib64/camera/com.qti.tuned.mot_hawao_s5kjn1.bin
+vendor/lib64/camera/com.qti.tuned.mot_devon_hi1634q.bin
+vendor/lib64/camera/com.qti.tuned.mot_devon_ov02b10.bin
+vendor/lib64/camera/com.qti.tuned.mot_devon_ov02d10.bin
+vendor/lib64/camera/com.qti.tuned.mot_devon_s5k4h7.bin
+vendor/lib64/camera/com.qti.tuned.mot_devon_s5kjn1.bin
 vendor/lib64/camera/components/com.arcsoft.node.mfnr.so
 vendor/lib64/camera/components/com.mot.node.dc_capture.so
 vendor/lib64/camera/components/com.mot.node.dc_preview.so
@@ -111,9 +111,10 @@ vendor/lib64/com.qti.feature2.stub.so
 vendor/lib64/com.qti.feature2.swmf.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
-vendor/lib64/libarcsoft_distortion_correction.so
+vendor/lib64/libBSTSWAD.so
+vendor/lib64/libBSTbase_share.so
+vendor/lib64/libarcsoft_chi_utils.so
 vendor/lib64/libarcsoft_low_light_shot.so
-vendor/lib64/libarcsoft_portrait_distortion_correction.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamerapostproc.so
@@ -143,6 +144,7 @@ vendor/lib64/libopencv.so
 vendor/lib64/libopestriping.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libswregistrationalgo.so
+vendor/lib64/libundistort_impl.so
 vendor/lib64/libvidhance.so
 vendor/lib64/libvidhance_active_ois.so
 vendor/lib64/libvidhance_dmbr.so
@@ -152,8 +154,10 @@ vendor/lib64/libvidhance_horizon_correction.so
 vendor/lib64/libvidhance_stabilizer.so
 
 # Camera-configs
+vendor/etc/camera/SwadAIMod.bin
+vendor/etc/camera/SwadCalib.bin
+vendor/etc/camera/SwadParamList.txt
 vendor/etc/camera/aec_golden_wide.bin
-vendor/etc/camera/arcsoft_calibration_u_dc.bin
 vendor/etc/camera/dual_golden_wide.bin
 vendor/etc/camera/vidhance_calibration
 
@@ -162,21 +166,22 @@ product/etc/permissions/com.motorola.camera3.content.ai.xml
 product/etc/permissions/com.motorola.camera3.xml
 
 # Display (Calibration Data)
-vendor/etc/qdcm_calib_data_mipi_mot_vid_edosd_1080p_643.xml
-vendor/etc/qdcm_calib_data_mipi_mot_vid_edovtdr_1080p_643.xml
-vendor/etc/qdcm_calib_data_mipi_mot_vid_visionox_1080p_643.xml
-vendor/etc/qdcm_calib_data_mipi_mot_vid_visionoxrm_1080p_643.xml
+vendor/etc/qdcm_calib_data_mipi_mot_vid_tm_nt36672c_fhdp_649.xml
+vendor/etc/qdcm_calib_data_mipi_mot_vid_txd_ft8726_fhdp_649.xml
+vendor/etc/qdcm_calib_data_mipi_mot_vid_txd_ft8726_fhdp_649_v0.xml
+vendor/etc/qdcm_calib_data_mipi_mot_vid_txd_ili7807s_fhdp_649.xml
 
 # Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-chipone
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-fpc
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc
 vendor/etc/init/init.ets.rc
-vendor/lib64/hw/chipone.fingerprint.default.so
-vendor/lib64/libRbsFlow.so
+vendor/lib64/com.fingerprints.extension@1.0.so
+vendor/lib64/hw/bix.fingerprint.default.so
 vendor/lib64/libets_teeclient_v2.so
-vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
+vendor/lib64/libree_bix_agent.so
+vendor/lib64/vendor.egistecbix.hardware.fingerprint@4.0.so
 
 # Graphics firmware
 vendor/firmware/a630_sqe.fw
@@ -184,33 +189,33 @@ vendor/firmware/a650_gmu.bin
 vendor/firmware/a650_sqe.fw
 vendor/firmware/a702_sqe.fw
 
-# NFC (NXP)
-vendor/etc/init/android.hardware.nfc@1.2-service.rc
-vendor/etc/libnfc-nxp.conf
-vendor/lib64/libpn557_fw.so
+# NFC (ST)
+vendor/bin/STFlashTool
+vendor/bin/hw/android.hardware.nfc@1.2-service.st
+vendor/etc/init/android.hardware.nfc@1.2-service.st.rc
+vendor/etc/init/hw/init.vendor.st21nfc.rc
+vendor/etc/libnfc-hal-st.conf
+vendor/etc/libnfc-nci-st.conf
+vendor/etc/st21nfc_conf_ds.txt
+vendor/etc/st21nfc_conf_ss.txt
+vendor/lib64/nfc_nci.st21nfc.st.so
 
-# NFC (Samsung)
-vendor/bin/hw/android.hardware.nfc@1.2-service.sec
-vendor/etc/init/android.hardware.nfc@1.2-service.sec.rc
-vendor/etc/init/init.nfc.sec.rc
-vendor/etc/libnfc-sec-vendor.conf
-vendor/etc/sec_s3nrn4v_hwreg.bin
-vendor/etc/sec_s3nrn4v_swreg.bin
-vendor/lib64/nfc_nci_sec.so
-
-# NFC firmware (Samsung)
-vendor/firmware/sec_s3nrn4v_firmware.bin
+# NFC firmware (ST)
+vendor/firmware/st21nfc_fw.bin
+vendor/firmware/st21nfc_fw7.bin
 
 # Sensor-configs
 vendor/etc/sensors/config/bengal_bmi3x0_0.json
 vendor/etc/sensors/config/bengal_default_sensors.json
 vendor/etc/sensors/config/bengal_dynamic_sensors.json
 vendor/etc/sensors/config/bengal_icm4x6xa.json
+vendor/etc/sensors/config/bengal_lsm6dso_0.json
 vendor/etc/sensors/config/bengal_mmc56x3x_0.json
 vendor/etc/sensors/config/bengal_mn78xxx_0.json
+vendor/etc/sensors/config/bengal_mn78xxx_0_always.json
 vendor/etc/sensors/config/bengal_power_0.json
+vendor/etc/sensors/config/bengal_qmc6308_0.json
 vendor/etc/sensors/config/dynamic_sensors.json
-vendor/etc/sensors/config/ginum_qmc6308_0.json
 vendor/etc/sensors/config/mot_camgest.json
 vendor/etc/sensors/config/sns_amd.json
 vendor/etc/sensors/config/sns_amd_sw_disabled.json
@@ -250,10 +255,11 @@ vendor/etc/sensors/config/sns_wrist_pedo.json
 vendor/etc/sensors/sns_reg_config
 
 # Thermal
-vendor/etc/thermal-engine-hawao.conf
+vendor/etc/thermal-engine-devon.conf
 
 # Touchscreen firmware
-vendor/firmware/focaltech-edosd-ft3519-72-0000-hawao.bin
-vendor/firmware/focaltech-edovtdr-ft3519-63-0000-hawao.bin
-vendor/firmware/focaltech-visionox-ft3519-88-0000-hawao.bin
-vendor/firmware/focaltech-visionoxrm-ft3519-93-0000-hawao.bin
+vendor/firmware/ILITEK_FW
+vendor/firmware/NT36xxx_MP_Setting_Criteria_6056.csv
+vendor/firmware/focaltech-txd-ft8726-02-0000-devon.bin
+vendor/firmware/tm_novatek_ts_fw.bin
+vendor/firmware/tm_novatek_ts_mp.bin
