@@ -1,17 +1,17 @@
 # All unpinned blobs below are extracted from hawao_g S2SES32.28-70-3
 
 # ACDB
-vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/Bluetooth_cal.acdb
 vendor/etc/acdbdata/General_cal.acdb
 vendor/etc/acdbdata/Global_cal.acdb
 vendor/etc/acdbdata/Handset_cal.acdb
 vendor/etc/acdbdata/Hdmi_cal.acdb
 vendor/etc/acdbdata/Headset_cal.acdb
+vendor/etc/acdbdata/Speaker_cal.acdb
+vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
-vendor/etc/acdbdata/Speaker_cal.acdb
 
 # Audio Firmware
 vendor/firmware/aw882xx_afe_params.bin
@@ -164,8 +164,8 @@ product/etc/permissions/com.motorola.camera3.xml
 # Display (Calibration Data)
 vendor/etc/qdcm_calib_data_mipi_mot_vid_edosd_1080p_643.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_edovtdr_1080p_643.xml
-vendor/etc/qdcm_calib_data_mipi_mot_vid_visionoxrm_1080p_643.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_visionox_1080p_643.xml
+vendor/etc/qdcm_calib_data_mipi_mot_vid_visionoxrm_1080p_643.xml
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-chipone
@@ -174,8 +174,8 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc
 vendor/etc/init/init.ets.rc
 vendor/lib64/hw/chipone.fingerprint.default.so
-vendor/lib64/libets_teeclient_v2.so
 vendor/lib64/libRbsFlow.so
+vendor/lib64/libets_teeclient_v2.so
 vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
 
 # Graphics firmware
