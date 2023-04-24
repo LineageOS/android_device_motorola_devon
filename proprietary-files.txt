@@ -166,8 +166,6 @@ vendor/etc/qdcm_calib_data_mipi_mot_vid_edosd_1080p_643.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_edovtdr_1080p_643.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_visionoxrm_1080p_643.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_visionox_1080p_643.xml
-vendor/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml
-vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-chipone
