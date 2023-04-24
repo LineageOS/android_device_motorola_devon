@@ -181,15 +181,6 @@ vendor/lib64/libRbsFlow.so
 vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
-# Fingerprint (Firmware)
-vendor/firmware/goodix-gtx5-38-04-foles.bin
-vendor/firmware/goodix-gtx5-40-04-parker.bin
-vendor/firmware/goodix-gtx8-01-14-racerl.bin
-vendor/firmware/goodix-GTx8-18-01-racer.bin
-vendor/firmware/goodix_cfg_group2.bin
-vendor/firmware/goodix_cfg_group2_parker.bin
-vendor/firmware/goodix_cfg_group_boe_racerl.bin
-
 # Graphics firmware
 vendor/firmware/a630_sqe.fw
 vendor/firmware/a650_gmu.bin
