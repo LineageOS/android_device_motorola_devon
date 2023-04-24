@@ -13,7 +13,7 @@ DEVICE_PATH := device/motorola/devon
 TARGET_BOOTLOADER_BOARD_NAME := devon
 
 # Display
-TARGET_SCREEN_DENSITY := 420
+TARGET_SCREEN_DENSITY := 400
 
 # HIDL
 ODM_MANIFEST_SKUS += b bc d dc dn dnc n nc
