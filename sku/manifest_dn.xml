@@ -25,12 +25,4 @@
         <fqname>@1.2::ISecureElement/SIM1</fqname>
         <fqname>@1.2::ISecureElement/SIM2</fqname>
     </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.nxp.nxpnfc</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.nxp.nxpnfclegacy</name>
-        <transport>hwbinder</transport>
-    </hal>
 </manifest>

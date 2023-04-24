@@ -59,12 +59,12 @@
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.radio.ims</name>
         <transport>hwbinder</transport>
-        <version>1.7</version>
+        <version>1.6</version>
         <interface>
             <name>IImsRadio</name>
             <instance>imsradio0</instance>
         </interface>
-        <fqname>@1.7::IImsRadio/imsradio0</fqname>
+        <fqname>@1.6::IImsRadio/imsradio0</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.radio.lpa</name>
