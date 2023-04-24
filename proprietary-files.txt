@@ -169,6 +169,18 @@ vendor/etc/qdcm_calib_data_mipi_mot_vid_visionox_1080p_643.xml
 vendor/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml
 vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml
 
+# Fingerprint
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-chipone
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc
+vendor/etc/init/init.ets.rc
+vendor/lib64/hw/chipone.fingerprint.default.so
+vendor/lib64/libets_teeclient_v2.so
+vendor/lib64/libRbsFlow.so
+vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+
 # Fingerprint (Firmware)
 vendor/firmware/goodix-gtx5-38-04-foles.bin
 vendor/firmware/goodix-gtx5-40-04-parker.bin
