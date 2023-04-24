@@ -24,5 +24,10 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    init.oem.fingerprint2.sh \
+    init.mmi.overlay.rc
+
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/motorola/hawao/hawao-vendor.mk)
