@@ -186,7 +186,6 @@ vendor/firmware/a702_sqe.fw
 
 # NFC (NXP)
 vendor/etc/init/android.hardware.nfc@1.2-service.rc
-vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
 vendor/lib64/libpn557_fw.so
 
