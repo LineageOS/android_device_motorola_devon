@@ -20,24 +20,24 @@
     </reference>
     <reference name="SONIFICATION_CATEGORY_SPEAKER_VOLUME_CURVE">
     <!-- Speaker Sonification reference Volume Curve -->
-        <point>1,-4500</point>
-        <point>33,-2400</point>
-        <point>66,-1300</point>
+        <point>1,-5300</point>
+        <point>33,-2970</point>
+        <point>66,-1450</point>
         <point>100,0</point>
     </reference>
     <reference name="NOTIFICATION_CATEGORY_SPEAKER_VOLUME_CURVE">
     <!-- Speaker Sonification reference Volume Curve -->
-        <point>1,-4400</point>
-        <point>40,-2150</point>
-        <point>80,-1000</point>
+        <point>1,-5300</point>
+        <point>70,-2390</point>
+        <point>84,-1010</point>
         <point>100,0</point>
     </reference>
     <reference name="DEFAULT_SYSTEM_VOLUME_CURVE">
     <!-- Default System reference Volume Curve -->
-        <point>1,-2900</point>
-        <point>33,-2200</point>
-        <point>66,-1500</point>
-        <point>100,-700</point>
+        <point>1,-3800</point>
+        <point>33,-3300</point>
+        <point>66,-2800</point>
+        <point>100,-2300</point>
     </reference>
     <reference name="DEFAULT_MEDIA_VOLUME_CURVE">
     <!-- Default Media reference Volume Curve -->
@@ -62,16 +62,16 @@
     </reference>
     <reference name="DEFAULT_DEVICE_CATEGORY_SPEAKER_VOLUME_CURVE">
     <!-- Default is Speaker Media Volume Curve -->
-        <point>1,-5400</point>
-        <point>35,-2900</point>
-        <point>66,-1400</point>
+        <point>1,-6000</point>
+        <point>33,-3100</point>
+        <point>66,-1450</point>
         <point>100,0</point>
     </reference>
     <reference name="DEFAULT_DEVICE_CATEGORY_EARPIECE_VOLUME_CURVE">
     <!--Default Volume Curve -->
-        <point>1,-6300</point>
-        <point>33,-3100</point>
-        <point>66,-1450</point>
+        <point>1,-4950</point>
+        <point>33,-3350</point>
+        <point>66,-1700</point>
         <point>100,0</point>
     </reference>
     <reference name="DEFAULT_DEVICE_CATEGORY_EXT_MEDIA_VOLUME_CURVE">
