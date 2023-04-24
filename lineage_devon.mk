@@ -9,21 +9,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from device
-$(call inherit-product, device/motorola/hawao/device.mk)
+$(call inherit-product, device/motorola/devon/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_hawao
-PRODUCT_DEVICE := hawao
+PRODUCT_NAME := lineage_devon
+PRODUCT_DEVICE := devon
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := moto g42
+PRODUCT_MODEL := moto g32
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-BUILD_FINGERPRINT := "motorola/hawao_g/hawao:12/S2SES32.28-70-3/49844-8e144:user/release-keys"
+BUILD_FINGERPRINT := "motorola/devon_g/devon:12/S2SN32.34-72-12/6a9200-b2c45:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=hawao_g \
-    PRIVATE_BUILD_DESC="hawao_g-user 12 S2SES32.28-70-3 49844-8e144 release-keys"
+    TARGET_PRODUCT=devon_g \
+    PRIVATE_BUILD_DESC="devon_g-user 12 S2SN32.34-72-12 6a9200-b2c45 release-keys"

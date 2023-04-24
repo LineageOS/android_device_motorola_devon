@@ -1,4 +1,4 @@
-Device tree configuration for Motorola Moto G42
+Device tree configuration for Motorola Moto G32
 
 
 ```

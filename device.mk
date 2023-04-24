@@ -30,4 +30,4 @@ PRODUCT_PACKAGES += \
     init.mmi.overlay.rc
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/motorola/hawao/hawao-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/devon/devon-vendor.mk)

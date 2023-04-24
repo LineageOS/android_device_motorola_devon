@@ -7,10 +7,10 @@
 # Inherit from sm6225-common
 include device/motorola/sm6225-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/motorola/hawao
+DEVICE_PATH := device/motorola/devon
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := hawao
+TARGET_BOOTLOADER_BOARD_NAME := devon
 
 # Display
 TARGET_SCREEN_DENSITY := 420
@@ -27,10 +27,10 @@ ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/sku/manifest_n.xml
 ODM_MANIFEST_NC_FILES := $(DEVICE_PATH)/sku/manifest_nc.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/ext_config/hawao-default.config
+TARGET_KERNEL_CONFIG += vendor/ext_config/devon-default.config
 
 # Recovery
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 100
 
 # Inherit from the proprietary version
-include vendor/motorola/hawao/BoardConfigVendor.mk
+include vendor/motorola/devon/BoardConfigVendor.mk
