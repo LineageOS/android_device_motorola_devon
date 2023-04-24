@@ -205,6 +205,9 @@ vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-sec-vendor.conf
 
+# Thermal
+vendor/etc/thermal-engine-hawao.conf
+
 # Touchscreen firmware
 vendor/firmware/focaltech-edosd-ft3519-72-0000-hawao.bin
 vendor/firmware/focaltech-edovtdr-ft3519-63-0000-hawao.bin
