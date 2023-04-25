@@ -42,10 +42,4 @@
     <!--  ID for the camera that needs extra protection -->
     <string translatable="false" name="config_protectedCameraId">1</string>
 
-    <!-- Vibrator pattern for camera gesture launch. -->
-    <integer-array name="config_cameraLaunchGestureVibePattern">
-        <item>0</item>
-        <item>150</item>
-    </integer-array>
-
 </resources>
