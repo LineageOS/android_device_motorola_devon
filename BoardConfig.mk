@@ -29,6 +29,10 @@ ODM_MANIFEST_NC_FILES := $(DEVICE_PATH)/sku/manifest_nc.xml
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/ext_config/devon-default.config
 
+# Kernel Modules - Vendor Boot
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/vendor_boot.modules.load))
+BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)
+
 # Recovery
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 100
 
