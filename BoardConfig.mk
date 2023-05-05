@@ -16,6 +16,7 @@ TARGET_BOOTLOADER_BOARD_NAME := devon
 TARGET_SCREEN_DENSITY := 400
 
 # HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 ODM_MANIFEST_SKUS += b bc d dc dn dnc n nc
 ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/sku/manifest_b.xml
 ODM_MANIFEST_BC_FILES := $(DEVICE_PATH)/sku/manifest_bc.xml
