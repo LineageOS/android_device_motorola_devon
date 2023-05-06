@@ -1,3 +1,6 @@
+# Camera
+persist.vendor.camera.physical.num=4
+
 # Display
 ro.surface_flinger.has_wide_color_display=false
 ro.surface_flinger.set_idle_timer_ms=500
