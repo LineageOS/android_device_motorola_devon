@@ -6,3 +6,6 @@ ro.surface_flinger.use_smart_90_for_video=true
 
 # Fingerprint
 vendor.false_touch_quality=26
+
+# Radio
+ro.vendor.radio.imei.sv=10
