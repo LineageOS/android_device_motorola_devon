@@ -1,3 +1,7 @@
+# Audio
+persist.vendor.audio.voicecall.speaker.stereo=true
+ro.audio.monitorRotation=true
+
 # Camera
 persist.vendor.camera.physical.num=4
 
