@@ -27,6 +27,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
+    fstab.qcom_ufs \
     init.oem.fingerprint2.sh \
     init.mmi.overlay.rc
 
