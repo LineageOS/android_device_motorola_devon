@@ -161,10 +161,6 @@ vendor/etc/camera/aec_golden_wide.bin
 vendor/etc/camera/dual_golden_wide.bin
 vendor/etc/camera/vidhance_calibration
 
-# Camera (Permissions)
-product/etc/permissions/com.motorola.camera3.content.ai.xml
-product/etc/permissions/com.motorola.camera3.xml
-
 # Display (Calibration Data)
 vendor/etc/qdcm_calib_data_mipi_mot_vid_tm_nt36672c_fhdp_649.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_txd_ft8726_fhdp_649.xml
