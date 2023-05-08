@@ -15,3 +15,7 @@ bq2597x_mmi_iio.ko
 mmi_discrete_turbo_charger.ko
 tcpc_sgm7220.ko
 rt_pd_manager.ko
+sensors_class.ko
+nova_0flash_mmi.ko
+ili9882_mmi.ko
+focaltech_0flash_v2_mmi.ko
