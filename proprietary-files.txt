@@ -261,3 +261,9 @@ vendor/firmware/NT36xxx_MP_Setting_Criteria_6056.csv
 vendor/firmware/focaltech-txd-ft8726-02-0000-devon.bin
 vendor/firmware/tm_novatek_ts_fw.bin
 vendor/firmware/tm_novatek_ts_mp.bin
+
+# Touchscreen firmware (recovery)
+vendor/firmware/ILITEK_FW:recovery/root/vendor/firmware/ILITEK_FW
+vendor/firmware/focaltech-txd-ft8726-02-0000-devon.bin:recovery/root/vendor/firmware/focaltech-txd-ft8726-02-0000-devon.bin
+vendor/firmware/tm_novatek_ts_fw.bin:recovery/root/vendor/firmware/tm_novatek_ts_fw.bin
+vendor/firmware/tm_novatek_ts_mp.bin:recovery/root/vendor/firmware/tm_novatek_ts_mp.bin
