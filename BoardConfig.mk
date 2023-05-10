@@ -41,5 +41,13 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 105
 # Security patch level
 VENDOR_SECURITY_PATCH := 2023-02-01
 
+# Verified Boot
+BOARD_AVB_ROLLBACK_INDEX := 7
+BOARD_AVB_VBMETA_SYSTEM := system system_ext product
+BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
+BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 7
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 2
+
 # Inherit from the proprietary version
 include vendor/motorola/devon/BoardConfigVendor.mk
