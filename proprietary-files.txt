@@ -202,6 +202,9 @@ vendor/lib64/nfc_nci.st21nfc.st.so
 vendor/firmware/st21nfc_fw.bin
 vendor/firmware/st21nfc_fw7.bin
 
+# SAR firmware
+vendor/firmware/aw9610x_0.bin
+
 # Sensor-configs
 vendor/etc/sensors/config/bengal_bmi3x0_0.json
 vendor/etc/sensors/config/bengal_default_sensors.json
