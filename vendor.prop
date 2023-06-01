@@ -1,4 +1,7 @@
 # Audio
+persist.vendor.audio.dualmic.config=endfire
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicecomm=true
 persist.vendor.audio.voicecall.speaker.stereo=true
 ro.audio.monitorRotation=true
 
