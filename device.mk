@@ -11,7 +11,8 @@ $(call inherit-product, device/motorola/sm6225-common/bengal.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
 AB_OTA_PARTITIONS += \
-    vbmeta_system
+    vbmeta_system \
+    vendor_boot
 
 # Audio - Configs
 PRODUCT_COPY_FILES += \
