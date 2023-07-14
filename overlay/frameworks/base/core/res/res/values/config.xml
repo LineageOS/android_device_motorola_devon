@@ -250,7 +250,4 @@
         <item>0</item>
         <item>50</item>
     </integer-array>
-
-    <!-- Default value for performant auth feature. -->
-    <bool name="config_performantAuthDefault">true</bool>
 </resources>
