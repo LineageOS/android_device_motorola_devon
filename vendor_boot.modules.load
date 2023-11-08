@@ -19,3 +19,4 @@ sensors_class.ko
 nova_0flash_mmi.ko
 ili9882_mmi.ko
 focaltech_0flash_v2_mmi.ko
+exfat.ko
