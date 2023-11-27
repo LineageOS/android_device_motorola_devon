@@ -15,7 +15,7 @@ ro.surface_flinger.set_touch_timer_ms=2000
 ro.surface_flinger.use_smart_90_for_video=true
 
 # Fingerprint
-vendor.false_touch_quality=26
+vendor.false_touch_quality=38
 
 # Radio
-ro.vendor.radio.imei.sv=10
+ro.vendor.radio.imei.sv=17
