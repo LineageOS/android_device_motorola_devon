@@ -22,8 +22,8 @@ PRODUCT_MODEL := moto g32
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-BUILD_FINGERPRINT := "motorola/devon_g/devon:13/T2SN33.73-22-3/8d297-b531e:user/release-keys"
+BUILD_FINGERPRINT := "motorola/devon_g/devon:13/T2SNS33.73-22-3-2/61221-f86875:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=devon_g \
-    PRIVATE_BUILD_DESC="devon_g-user 13 T2SN33.73-22-3 8d297-b531e release-keys"
+    PRIVATE_BUILD_DESC="devon_g-user 13 T2SNS33.73-22-3-2 61221-f86875 release-keys"
