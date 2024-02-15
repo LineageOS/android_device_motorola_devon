@@ -16,6 +16,23 @@
       "message": "Reported as working by some users. The issue only seems to appear on devon w/ egis fp sensor (I cannot reproduce it on rhode w/ egis sensor). Although, if I recall correctly, these files are shipped in all the three devices\u0027 stock firmwares, I haven\u0027t commonised this because they are not shipped on guamp, which also uses the sm6225-common tree (although it doesn\u0027t look like it is going to be shipped anytime soon?). Let me know if I should commonise this.",
       "revId": "e50b4653fa17403ddc091abd71aadafea423c050",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b7e27536_87b360e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2024-02-15T18:45:05Z",
+      "side": 1,
+      "message": "It happens for me. I will try",
+      "revId": "e50b4653fa17403ddc091abd71aadafea423c050",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
