@@ -180,6 +180,8 @@ vendor/lib64/hw/bix.fingerprint.default.so
 vendor/lib64/libets_teeclient_v2.so
 vendor/lib64/libree_bix_agent.so
 vendor/lib64/vendor.egistecbix.hardware.fingerprint@4.0.so
+vendor/usr/idc/uinput-egis.idc
+vendor/usr/keylayout/uinput-egis.kl
 
 # Graphics firmware
 vendor/firmware/a630_sqe.fw
