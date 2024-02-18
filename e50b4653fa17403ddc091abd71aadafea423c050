@@ -50,6 +50,24 @@
       "message": "can\u0027t reproduce it in 14. :)",
       "revId": "e50b4653fa17403ddc091abd71aadafea423c050",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5a04d437_60716e10",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14010
+      },
+      "writtenOn": "2024-02-18T15:50:36Z",
+      "side": 1,
+      "message": "Eh, I don\u0027t know what to say. I haven\u0027t even got the device. Just got lots of reports from users, and this seems to do the job.",
+      "parentUuid": "00206ea7_ac80f0bb",
+      "revId": "e50b4653fa17403ddc091abd71aadafea423c050",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
