@@ -85,6 +85,24 @@
       "message": "Can\u0027t we just add the configs for all sensors in common device tree?",
       "revId": "e50b4653fa17403ddc091abd71aadafea423c050",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "48c5090f_be5540ea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14010
+      },
+      "writtenOn": "2024-02-18T17:03:22Z",
+      "side": 1,
+      "message": "Yes, we can. I uploaded this change because only devon users with an egis sensor seem to be affected. I will put all the common ones in the common tree, and the device-specific ones in the device-specific repos.",
+      "parentUuid": "99111ba3_074f6f85",
+      "revId": "e50b4653fa17403ddc091abd71aadafea423c050",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
