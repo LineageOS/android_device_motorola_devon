@@ -17,5 +17,8 @@ ro.surface_flinger.use_smart_90_for_video=true
 # Fingerprint
 vendor.false_touch_quality=38
 
+# NFC
+persist.vendor.nfc.st.multisim_fw_config=true
+
 # Radio
 ro.vendor.radio.imei.sv=17

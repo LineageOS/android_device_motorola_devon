@@ -189,14 +189,12 @@ vendor/firmware/a702_sqe.fw
 
 # NFC (ST)
 vendor/bin/STFlashTool
-vendor/bin/hw/android.hardware.nfc@1.2-service.st
-vendor/etc/init/android.hardware.nfc@1.2-service.st.rc
+vendor/etc/init/android.hardware.nfc@1.2-service.st.rc:vendor/etc/init/android.hardware.nfc@1.2-service.st-moto.rc
 vendor/etc/init/hw/init.vendor.st21nfc.rc
 vendor/etc/libnfc-hal-st.conf
 vendor/etc/libnfc-nci-st.conf
 vendor/etc/st21nfc_conf_ds.txt
 vendor/etc/st21nfc_conf_ss.txt
-vendor/lib64/nfc_nci.st21nfc.st.so
 
 # NFC firmware (ST)
 vendor/firmware/st21nfc_fw.bin
