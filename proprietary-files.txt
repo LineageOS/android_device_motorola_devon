@@ -258,8 +258,8 @@ vendor/etc/sensors/sns_reg_config
 # Thermal
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
-vendor/etc/thermal-engine.conf
 vendor/etc/thermal-engine-devon.conf
+vendor/etc/thermal-engine.conf
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 
