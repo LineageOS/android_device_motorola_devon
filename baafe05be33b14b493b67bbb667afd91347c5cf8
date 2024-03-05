@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ceaaec5e_f138dddb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14010
+      },
+      "writtenOn": "2024-03-05T18:54:17Z",
+      "side": 1,
+      "message": "Patch updated adding all idc/keylayout files from devon\u0027s stock fw, as agreed with Mike. The vendor PR has also been updated. Voting V+1 on behalf of the users who tested this on devon.",
+      "revId": "baafe05be33b14b493b67bbb667afd91347c5cf8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
