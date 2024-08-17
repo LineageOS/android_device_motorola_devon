@@ -26,8 +26,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service.st \
-    libchrome.vendor
+    android.hardware.nfc@1.2-service.st
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
