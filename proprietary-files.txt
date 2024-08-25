@@ -139,7 +139,6 @@ vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmot_afd.so
 vendor/lib64/libmot_lux_standardization.so
 vendor/lib64/libmpbase.so
-vendor/lib64/libofflinelog.so
 vendor/lib64/libopencv.so
 vendor/lib64/libopestriping.so
 vendor/lib64/libremosaic_wrapper.so
