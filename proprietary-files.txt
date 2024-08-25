@@ -110,7 +110,8 @@ vendor/lib64/com.qti.feature2.stub.so
 vendor/lib64/com.qti.feature2.swmf.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
-vendor/lib64/libBSTSWAD.so
+# libBSTSWAD depends on NDK libnativewindow and build is unable to resolve its symbols
+vendor/lib64/libBSTSWAD.so;DISABLE_CHECKELF
 vendor/lib64/libBSTbase_share.so
 vendor/lib64/libarcsoft_chi_utils.so
 vendor/lib64/libarcsoft_low_light_shot.so
