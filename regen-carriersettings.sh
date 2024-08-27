@@ -1,7 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2019-2023 The LineageOS Project
-#
+# SPDX-FileCopyrightText: 2019-2024 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
