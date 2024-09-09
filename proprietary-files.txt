@@ -1,5 +1,8 @@
 # All unpinned blobs below are extracted from devon_g T2SNS33.73-22-3-7
 
+# Current blobs with ELF checks disabled:
+# libBSTSWAD depends on NDK libnativewindow and build is unable to resolve its symbols
+
 # ACDB
 vendor/etc/acdbdata/Bluetooth_cal.acdb
 vendor/etc/acdbdata/General_cal.acdb
@@ -110,7 +113,6 @@ vendor/lib64/com.qti.feature2.stub.so
 vendor/lib64/com.qti.feature2.swmf.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
-# libBSTSWAD depends on NDK libnativewindow and build is unable to resolve its symbols
 vendor/lib64/libBSTSWAD.so;DISABLE_CHECKELF
 vendor/lib64/libBSTbase_share.so
 vendor/lib64/libarcsoft_chi_utils.so
