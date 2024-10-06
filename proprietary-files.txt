@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from devon_g T2SNS33.73-22-3-7
+# All unpinned blobs below are extracted from devon_g T2SNS33.73-22-3-10
 
 # Current blobs with ELF checks disabled:
 # libBSTSWAD depends on NDK libnativewindow and build is unable to resolve its symbols
