@@ -24,6 +24,13 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    fstab.qcom.vendor_ramdisk \
+    init.oem.fingerprint2.sh \
+    init.mmi.overlay.rc
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service.st
@@ -50,19 +57,13 @@ $(foreach DEVICE_SKU, $(DEVICE_SKUS), \
     $(LOCAL_PATH)/permissions/unavail.android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.nfc.xml \
     $(LOCAL_PATH)/permissions/unavail.com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/com.nxp.mifare.xml)
 
-# Rootdir
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.oem.fingerprint2.sh \
-    init.mmi.overlay.rc
-
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 30
 PRODUCT_SHIPPING_API_LEVEL := 31
 
-# Vendor ramdisk
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom_ramdisk:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/devon/devon-vendor.mk)
