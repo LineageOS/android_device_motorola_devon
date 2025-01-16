@@ -33,6 +33,23 @@
       "message": "update not working",
       "revId": "d1a9fc35de8a6491bda4a9e23ee55b4b80ec5c45",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3484cba0_9697787e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34753
+      },
+      "writtenOn": "2025-01-16T11:50:05Z",
+      "side": 1,
+      "message": "ok",
+      "revId": "d1a9fc35de8a6491bda4a9e23ee55b4b80ec5c45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
