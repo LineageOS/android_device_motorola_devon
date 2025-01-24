@@ -33,6 +33,13 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('class hal', 'override\n    class hal'),
     ('vendor/lib64/camera/components/com.qti.node.gpu.so', 'vendor/lib64/hw/camera.qcom.so'): blob_fixup()
         .binary_regex_replace(b'camera.mot.is.coming.cts', b'vendor.camera.coming.cts'),
+    'vendor/lib64/libBSTSWAD.so': blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_lockPlanes')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
 }  # fmt: skip
 
 extract_fns: extract_fns_user_type = {
