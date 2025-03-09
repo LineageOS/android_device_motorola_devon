@@ -29,6 +29,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/bin/STFlashTool': blob_fixup()
+        .add_needed('libbase_shim.so'),
     'vendor/etc/init/android.hardware.nfc@1.2-service.st-moto.rc': blob_fixup()
         .regex_replace('class hal', 'override\n    class hal'),
     ('vendor/lib64/camera/components/com.qti.node.gpu.so', 'vendor/lib64/hw/camera.qcom.so'): blob_fixup()
