@@ -135,7 +135,11 @@ vendor/lib64/libjpege.so
 vendor/lib64/liblmutils-ns.so
 vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmmcamera_cac3.so
+vendor/lib64/libmmcamera_faceproc2.so
+vendor/lib64/libmmcamera_faceproc.so
+vendor/lib64/libmmcamera_lscv35.so
 vendor/lib64/libmmcamera_mfnr.so
+vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmot_afd.so
 vendor/lib64/libmot_lux_standardization.so
 vendor/lib64/libmpbase.so
