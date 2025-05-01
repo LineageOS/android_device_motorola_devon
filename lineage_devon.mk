@@ -23,6 +23,6 @@ PRODUCT_MANUFACTURER := motorola
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="devon_g-user 13 T2SNS33.73-22-3-13 cb9fb-3e694f release-keys" \
-    BuildFingerprint=motorola/devon_g/devon:13/T2SNS33.73-22-3-13/cb9fb-3e694f:user/release-keys \
+    BuildDesc="devon_g-user 13 T2SNS33.73-22-3-14 d8b49-5dd2a release-keys" \
+    BuildFingerprint=motorola/devon_g/devon:13/T2SNS33.73-22-3-14/d8b49-5dd2a:user/release-keys \
     DeviceProduct=devon_g
