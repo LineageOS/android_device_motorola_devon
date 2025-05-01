@@ -1,5 +1,3 @@
-#NFC ST21NFC
-import /vendor/etc/init/hw/init.vendor.st21nfc.rc
 
 on early-init && property:ro.bootmode=mot-factory
    insmod /vendor/lib/modules/moto_f_usbnet.ko
