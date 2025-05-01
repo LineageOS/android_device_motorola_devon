@@ -188,9 +188,7 @@ vendor/usr/keylayout/uinput-fpc.kl
 vendor/firmware/a630_sqe.fw
 
 # NFC (ST)
-vendor/bin/STFlashTool
 vendor/etc/init/android.hardware.nfc@1.2-service.st.rc:vendor/etc/init/android.hardware.nfc@1.2-service.st-moto.rc
-vendor/etc/init/hw/init.vendor.st21nfc.rc
 vendor/etc/libnfc-hal-st.conf
 vendor/etc/libnfc-nci-st.conf
 vendor/etc/st21nfc_conf_ds.txt
