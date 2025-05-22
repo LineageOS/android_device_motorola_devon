@@ -201,6 +201,9 @@ vendor/etc/st21nfc_conf_ss.txt
 vendor/firmware/st21nfc_fw.bin
 vendor/firmware/st21nfc_fw7.bin
 
+# OEM
+vendor/etc/vhw.xml
+
 # SAR firmware
 vendor/firmware/aw9610x_0.bin
 
@@ -274,3 +277,6 @@ vendor/firmware/ILITEK_FW:recovery/root/vendor/firmware/ILITEK_FW
 vendor/firmware/focaltech-txd-ft8726-02-0000-devon.bin:recovery/root/vendor/firmware/focaltech-txd-ft8726-02-0000-devon.bin
 vendor/firmware/tm_novatek_ts_fw.bin:recovery/root/vendor/firmware/tm_novatek_ts_fw.bin
 vendor/firmware/tm_novatek_ts_mp.bin:recovery/root/vendor/firmware/tm_novatek_ts_mp.bin
+
+# WiFi
+vendor/bin/cnss-daemon

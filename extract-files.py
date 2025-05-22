@@ -21,6 +21,7 @@ from extract_utils.main import (
 
 namespace_imports = [
     'hardware/motorola',
+    'hardware/qcom-caf/wlan',
     'vendor/motorola/sm6225-common',
     'vendor/qcom/opensource/display',
 ]
