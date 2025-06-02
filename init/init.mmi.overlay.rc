@@ -1,161 +1,75 @@
-
-on early-init && property:ro.bootmode=mot-factory
-   insmod /vendor/lib/modules/moto_f_usbnet.ko
-
 on mmi-priority
-   # Only high priority MMI DLKMs loaded here
-   # For instance, sensor_class referenced from several DLKMs
-   # and needs to load first. Touchscreen might need extra time
-   # to perform firmware update if necessary
-   setprop vendor.mmi_init.stage priority
-   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules mmi_annotate mmi_info tzlog_dump watchdog_cpu_ctx wl2864c.ko mmi_sys_temp
-
-on post-fs
-   # "Tap to wake" gesture
-   chown root input /sys/class/sensors/dt-gesture/enable
-   chmod 0660 /sys/class/sensors/dt-gesture/enable
-   chown root input /sys/class/sensors/dt-gesture/poll_delay
-   chmod 0660 /sys/class/sensors/dt-gesture/poll_delay
+    # Only high priority MMI DLKMs loaded here
+    # For instance, sensor_class referenced from several DLKMs
+    # and needs to load first. Touchscreen might need extra time
+    # to perform firmware update if necessary
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules mmi_annotate mmi_info wl2864c mmi_sys_temp
 
 on fs
-   # Majority of MMI DLKMs should be in this group
-   setprop vendor.mmi_init.stage common
-   insmod /vendor/lib/modules/adapter_class.ko
-   insmod /vendor/lib/modules/mmi_qc3p_wt6670f.ko
-   insmod /vendor/lib/modules/mmi_charger.ko
-   insmod /vendor/lib/modules/mmi_discrete_charger_class.ko
-   insmod /vendor/lib/modules/mmi_discrete_charger.ko
-   insmod /vendor/lib/modules/sgm4154x_charger.ko
-   insmod /vendor/lib/modules/rt9471_charger.ko
-   insmod /vendor/lib/modules/qpnp_adaptive_charge.ko
-   insmod /vendor/lib/modules/tcpc_class.ko
-   insmod /vendor/lib/modules/cw2217b_fg_mmi.ko
-   insmod /vendor/lib/modules/sm5602_fg_mmi.ko
-   insmod /vendor/lib/modules/bq2597x_mmi_iio.ko
-   insmod /vendor/lib/modules/mmi_discrete_turbo_charger.ko
-   insmod /vendor/lib/modules/tcpc_sgm7220.ko
-   insmod /vendor/lib/modules/rt_pd_manager.ko
-   insmod /vendor/lib/modules/sensors_class.ko
-   insmod /vendor/lib/modules/leds_aw99703.ko
-   insmod /vendor/lib/modules/leds_lm3697.ko
-   insmod /vendor/lib/modules/st21nfc.ko
+    # Majority of MMI DLKMs should be in this group
+    insmod /vendor/lib/modules/adapter_class.ko
+    insmod /vendor/lib/modules/mmi_qc3p_wt6670f.ko
+    insmod /vendor/lib/modules/mmi_charger.ko
+    insmod /vendor/lib/modules/mmi_discrete_charger_class.ko
+    insmod /vendor/lib/modules/mmi_discrete_charger.ko
+    insmod /vendor/lib/modules/sgm4154x_charger.ko
+    insmod /vendor/lib/modules/rt9471_charger.ko
+    insmod /vendor/lib/modules/qpnp_adaptive_charge.ko
+    insmod /vendor/lib/modules/tcpc_class.ko
+    insmod /vendor/lib/modules/cw2217b_fg_mmi.ko
+    insmod /vendor/lib/modules/sm5602_fg_mmi.ko
+    insmod /vendor/lib/modules/bq2597x_mmi_iio.ko
+    insmod /vendor/lib/modules/mmi_discrete_turbo_charger.ko
+    insmod /vendor/lib/modules/tcpc_sgm7220.ko
 
-   insmod /vendor/lib/modules/nova_0flash_mmi.ko
-   insmod /vendor/lib/modules/ili9882_mmi.ko
-   insmod /vendor/lib/modules/focaltech_0flash_v2_mmi.ko
-   insmod /vendor/lib/modules/ldo_vibrator_mmi.ko
-   insmod /vendor/lib/modules/leds-indicator-pwm.ko
-   #zram wb
-   mount_all /vendor/etc/fstab.qcom.zram --early
-   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_snd_soc_aw882xx aw9610x
+    insmod /vendor/lib/modules/rt_pd_manager.ko
+    insmod /vendor/lib/modules/sensors_class.ko
+    insmod /vendor/lib/modules/leds_aw99703.ko
+    insmod /vendor/lib/modules/leds_lm3697.ko
+    insmod /vendor/lib/modules/st21nfc.ko
+
+    insmod /vendor/lib/modules/nova_0flash_mmi.ko
+    insmod /vendor/lib/modules/ili9882_mmi.ko
+    insmod /vendor/lib/modules/focaltech_0flash_v2_mmi.ko
+    insmod /vendor/lib/modules/ldo_vibrator_mmi.ko
+    insmod /vendor/lib/modules/leds-indicator-pwm.ko
+
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_snd_soc_aw882xx aw9610x
 
 on charger
-   insmod /vendor/lib/modules/adapter_class.ko
-   insmod /vendor/lib/modules/mmi_qc3p_wt6670f.ko
-   insmod /vendor/lib/modules/mmi_discrete_charger.ko
-   insmod /vendor/lib/modules/mmi_charger.ko
-   insmod /vendor/lib/modules/mmi_discrete_charger_class.ko
-   insmod /vendor/lib/modules/sgm4154x_charger.ko
-   insmod /vendor/lib/modules/rt9471_charger.ko
-   insmod /vendor/lib/modules/qpnp_adaptive_charge.ko
-   insmod /vendor/lib/modules/tcpc_class.ko
-   insmod /vendor/lib/modules/cw2217b_fg_mmi.ko
-   insmod /vendor/lib/modules/sm5602_fg_mmi.ko
-   insmod /vendor/lib/modules/bq2597x_mmi_iio.ko
-   insmod /vendor/lib/modules/mmi_discrete_turbo_charger.ko
-   insmod /vendor/lib/modules/tcpc_sgm7220.ko
-
-
-on post-fs-data
-   # Load DLKM that can afford being loaded later
-   setprop vendor.mmi_init.stage late
-   start vendor.mmi_modules
-   #wait_for_prop init.svc.vendor.mmi_modules stopped
-   setprop vendor.mmi_init.stage complete
-
-on early-boot
-   # Goodix fingerprint
-   chown system system /dev/goodix_fp
-   chmod 0664 /dev/goodix_fp
-   chmod 0777 /proc/android_touch/debug
-   mkdir /data/vendor/gf_data 0770 system system
-   mkdir /mnt/vendor/persist/goodix 0770 system system
+    insmod /vendor/lib/modules/adapter_class.ko
+    insmod /vendor/lib/modules/mmi_qc3p_wt6670f.ko
+    insmod /vendor/lib/modules/mmi_discrete_charger.ko
+    insmod /vendor/lib/modules/mmi_charger.ko
+    insmod /vendor/lib/modules/mmi_discrete_charger_class.ko
+    insmod /vendor/lib/modules/sgm4154x_charger.ko
+    insmod /vendor/lib/modules/rt9471_charger.ko
+    insmod /vendor/lib/modules/qpnp_adaptive_charge.ko
+    insmod /vendor/lib/modules/tcpc_class.ko
+    insmod /vendor/lib/modules/cw2217b_fg_mmi.ko
+    insmod /vendor/lib/modules/sm5602_fg_mmi.ko
+    insmod /vendor/lib/modules/bq2597x_mmi_iio.ko
+    insmod /vendor/lib/modules/mmi_discrete_turbo_charger.ko
+    insmod /vendor/lib/modules/tcpc_sgm7220.ko
 
 on boot
-   # Change ownership for capsensor
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch0/enable
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch0/poll_delay
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch1/enable
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch1/poll_delay
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch2/enable
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch2/poll_delay
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch3/enable
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch3/poll_delay
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch4/enable
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch4/poll_delay
-   chown system system /sys/class/capsense/reset
-   chown system system /sys/class/capsense/int_state
-
-   # change permission for adaptive charging
-   chown system system /sys/module/qpnp_adaptive_charge/parameters/upper_limit
-   chown system system /sys/module/qpnp_adaptive_charge/parameters/lower_limit
-   # change ownership of display early suspend node
-   chown root system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dsi_display_early_power
-   chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dsi_display_early_power
-
-   #Change ownership and permission of st nfc device
-   chown nfc nfc /dev/st21nfc
-   chmod 0660 /dev/st21nfc
-
-#on post-fs-data
-#    mkdir /data/vendor/focaltech  0770  system system
-
-    chown vendor_pwric vendor_pwric /sys/class/power_supply/cp-standalone/force_chg_auto_enable
-    chown vendor_pwric vendor_pwric /proc/driver/wt6670f_firmware_num
-
-#service vendor.mmi_modules /vendor/bin/init.mmi.modules.sh
-#    user root
-#    oneshot
-#    disabled
+    # Change ownership and permission of st nfc device
+    chown nfc nfc /dev/st21nfc
+    chmod 0660 /dev/st21nfc
 
 service capsense_reset /system/vendor/bin/capsense_reset
-   class core
-   user system
-   group system input
-   disabled
+    class core
+    user system
+    group system input
+    disabled
 
 on property:sys.boot_completed=1
     start capsense_reset
-
-service vendor.motpsd /vendor/bin/motpsd
-    class late_start
-    user root
-
-service vendor.vl53l1_daemon /vendor/bin/vl53l1_daemon
-    class late_start
-    user root
-    group root
-    socket vl53l1_daemon stream 660 root system
 
 service vendor.mmi-laser-sh /vendor/bin/init.mmi.laser.sh
     class core
     user root
     oneshot
 
-# Turn on led to indicate device on in factory mode
-on property:ro.bootmode=mot-factory
-    write /sys/class/leds/charging/brightness 255
-
-# on property:ro.build.type=userdebug
-#    start vendor.touchRec
-
 on property:sys.boot_completed=1
     write /sys/devices/platform/soc/soc:mmi,charger/state_sync 1
-
-on post-fs && property:ro.vendor.build.motfactory=1
-    write /sys/devices/platform/soc/soc:mmi,charger/state_sync 1
-    wait /sys/class/power_supply/battery/device/factory_image_mode
-    write /sys/class/power_supply/battery/device/factory_image_mode 1
-
-on property:sys.boot_completed=1 && property:ro.build.type=userdebug
-    stop llkd-${ro.debuggable:-0}
