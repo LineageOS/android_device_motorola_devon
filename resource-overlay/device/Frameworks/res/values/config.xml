@@ -247,6 +247,10 @@
          non-zero. -->
     <integer name="config_defaultPeakRefreshRate">90</integer>
 
+    <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
+         If non-positive, then the refresh rate is unchanged even if thresholds are configured. -->
+    <integer name="config_defaultRefreshRateInZone">90</integer>
+
     <!-- An array of arrays of side fingerprint sensor properties relative to each display.
          Note: this value is temporary and is expected to be queried directly
          from the HAL in the future. -->
