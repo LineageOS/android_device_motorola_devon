@@ -31,9 +31,6 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    'vendor/etc/init/android.hardware.nfc@1.2-service.st-moto.rc': blob_fixup()
-        .regex_replace('on property:init.svc.vendor.stflashtool=stopped &&', 'on boot &&')
-        .regex_replace('class hal', 'override\n    class hal'),
     ('vendor/lib64/camera/components/com.qti.node.gpu.so', 'vendor/lib64/hw/camera.qcom.so'): blob_fixup()
         .binary_regex_replace(b'camera.mot.is.coming.cts', b'vendor.camera.coming.cts'),
     'vendor/lib64/libBSTSWAD.so': blob_fixup()

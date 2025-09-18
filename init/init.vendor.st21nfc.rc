@@ -1,0 +1,14 @@
+on boot
+    # Change ownership and permission of st nfc device
+    chown nfc nfc /dev/st21nfc
+    chmod 0660 /dev/st21nfc
+
+on boot && property:ro.vendor.hw.nfc=st
+    start vendor.st_nfc_hal_service
+
+service vendor.st_nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.st
+    override
+    class hal
+    user nfc
+    group nfc
+    disabled
