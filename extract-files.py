@@ -40,6 +40,11 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lockPlanes')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
+    (
+        'vendor/lib64/camera/components/com.qti.node.dewarp.so',
+        'vendor/lib64/camera/components/com.vidhance.node.processing.so',
+    ): blob_fixup()
+        .replace_needed('libui.so', 'libui-v34.so'),
 }  # fmt: skip
 
 extract_fns: extract_fns_user_type = {
