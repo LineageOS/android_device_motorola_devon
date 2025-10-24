@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "20fd9700_28a8df20",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33572
+      },
+      "writtenOn": "2025-10-24T21:59:45Z",
+      "side": 1,
+      "message": "Prevent hard bricks on builds of 22.2 like in https://community.iode.tech/t/bricked-motorola-g32-after-trying-to-lock-bootloader/7005",
+      "revId": "79e6cb6d7068f1fc289add6923483a858343fec9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
