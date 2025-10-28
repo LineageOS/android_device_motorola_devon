@@ -16,6 +16,23 @@
       "message": "Prevent hard bricks on builds of 22.2 like in https://community.iode.tech/t/bricked-motorola-g32-after-trying-to-lock-bootloader/7005",
       "revId": "79e6cb6d7068f1fc289add6923483a858343fec9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "822f58d9_f6b998e7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27312
+      },
+      "writtenOn": "2025-10-28T01:21:05Z",
+      "side": 1,
+      "message": "I understand this is important, but we\u0027ll no longer release LineageOS 22.2 builds for this device.",
+      "revId": "79e6cb6d7068f1fc289add6923483a858343fec9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
