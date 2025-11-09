@@ -16,6 +16,13 @@ prebuilt_etc {
     vendor: true,
 }
 
+prebuilt_etc {
+    name: "init.vendor.st21nfc.rc",
+    src: "init.vendor.st21nfc.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
 sh_binary {
     name: "init.oem.fingerprint2.sh",
     src: "init.oem.fingerprint2.sh",
