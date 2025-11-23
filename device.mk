@@ -32,7 +32,7 @@ PRODUCT_PACKAGES += \
     init.vendor.st21nfc.rc
 
 # LiveDisplay
-$(call soong_config_set,livedisplay_sysfs,enable_ab,true)
+$(call soong_config_set_bool,livedisplay_sysfs,enable_ab,true)
 
 # NFC
 PRODUCT_PACKAGES += \
